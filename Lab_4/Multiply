@@ -1,0 +1,20 @@
+#This function can multiply element in your list
+
+mylist = []                                             #init empty list
+print("How many element do you want in your list ")     
+number_of_element = int(input())                        #Collect number of element 
+print("Insert the element(s)")  
+for i in range(0,number_of_element):
+    element = int(input())
+    mylist.append(element)
+print("So, This is your list: ")
+print(mylist)                                           #Show lastest list
+
+def calculate(mylist):                                 #Calculate element in mylist
+    result = 1
+    for i in mylist:
+        result = result * i 
+    print (result)
+
+calculate(mylist)                           
+
